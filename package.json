@@ -1,0 +1,23 @@
+{
+  "name": "mongobackup",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./prod/index.js",
+  "scripts": {
+    "build": "npx tsc",
+    "start": "node ./prod/src/index.js",
+    "clean": "rmdir /s /q node_modules",
+    "reinstall": "npm run clean && npm install"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@stuyk/ezmongodb": "^2.0.3",
+    "cron": "^2.1.0"
+  },
+  "devDependencies": {
+    "@types/cron": "^2.0.0",
+    "typescript": "^4.7.4"
+  }
+}
